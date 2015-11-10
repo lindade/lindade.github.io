@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!-- Here the HTML starts, so we put an opening <html> tag here. -->
+  <head>
+  <!--<meta http-equiv="refresh" content="15"></meta>-->
+    <meta charset="UTF-8">
+    <title>CSS3 try</title>
+
+	<style>
+		/* this is the css of the page*/
+		.showImage{
+			background-color: purple;
+			width: 425px;
+			position: relative;
+		}
+
+		.showImage .hiddenImage{
+			width: 425px;
+			opacity: 0;
+			transition: opacity 1s;
+			position: absolute;
+			top: 0px;
+			animation: showImage 2s infinite alternate;
+		}
+
+		@keyframes showImage {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+		
+		.showImage img {
+			display: block; /* puts the background right behind the image*/
+			height: 318px;
+		}
+
+	</style>
+  </head>
+
+  <body>
+    <header><h1>What`s up?</h1></header>
+
+	<div class="showImage">
+		<img src="http://images.all-free-download.com/images/graphiclarge/daisy_pollen_flower_220533.jpg">
+		<img class="hiddenImage" src="http://www.howitworksdaily.com/wp-content/uploads/2015/05/Droplets-Water.jpg">
+	</div>
+
+  </body>
+</html>
+<!-- And in the end we close the <body> and <html> tag. -->
