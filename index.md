@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-<link rel="icon" href="img/favicon.png">
+<link rel="icon" href="favicon.png">
 
 You can use the [editor on GitHub](https://github.com/lindade/test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
