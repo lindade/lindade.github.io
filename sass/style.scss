@@ -1,0 +1,97 @@
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+
+body {
+  margin-top: 105px;
+  background: #333;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: 0.9;
+  background: #fff;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+
+#home {
+  position: relative;
+  background: url('../img/texture1.png');
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .primary-overlay {
+    background: $primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .arrow-icon {
+    font-size: 2.5rem;
+    animation: pulse 3s ease-in-out;
+    animation-iteration-count: infinite;
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(10px);
+      }
+
+      100% {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+#about {
+  background: #333;
+}
+
+#projects {
+  background: $primary-overlay;
+}
+
+@media(min-width: 768px) {
+  #home {
+    min-height: 500px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media(min-width: 992px) {
+  #home {
+
+    // add a margin top to bigger screens
+    .resp-mt {
+      margin-top: 6rem;
+    }
+  }
+}
+
+@media(min-width: 1200px) {}
