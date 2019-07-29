@@ -42,6 +42,9 @@ body {
   background: #333; }
 
 #projects {
+  background: #3292a6; }
+
+#main-footer {
   background: rgba(50, 146, 166, 0.8); }
 
 @media (min-width: 768px) {
