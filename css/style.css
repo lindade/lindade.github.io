@@ -75,9 +75,9 @@ body {
     #skills .skill-set .skill-text {
       position: absolute;
       top: -1.5em; }
-      #about .skill-set .skill-text h3,
-      #skills .skill-set .skill-text h3 {
-        font-weight: 6 0; }
+      #about .skill-set .skill-text h4,
+      #skills .skill-set .skill-text h4 {
+        text-transform: uppercase; }
       #about .skill-set .skill-text p,
       #skills .skill-set .skill-text p {
         font-size: 1.1rem; }

@@ -93,7 +93,6 @@ body {
 
   .skill-set {
     position: relative;
-
     margin: 2em 0 2em 0;
 
     .skill-icon {
@@ -108,8 +107,8 @@ body {
       position: absolute;
       top: -1.5em;
 
-      h3 {
-        font-weight: 6 0;
+      h4 {
+        text-transform: uppercase;
       }
 
       p {
