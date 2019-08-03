@@ -1,9 +1,13 @@
 $primary: #3292a6;
 $primary-overlay: rgba(50, 146, 166, 0.8);
+$primary-hover: #297786;
+$secondary: #ff6b45;
+$secondary-overlay: rgba(255, 107, 69, 0.8);
 
 body {
-  margin-top: 105px;
+  margin-top: 60px;
   background: #333;
+  font-family: 'Nunito', 'Verdana', sans-serif;
 }
 
 .navbar {
@@ -12,8 +16,8 @@ body {
   background: #fff;
 
   .nav-item {
-    font-size: 1.4rem;
-    padding-right: 1.4rem;
+    font-size: 1.2rem;
+    padding-right: 1.2rem;
   }
 }
 
@@ -32,7 +36,7 @@ body {
   }
 
   .primary-overlay {
-    background: $primary;
+    background: $primary-overlay;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,12 +66,75 @@ body {
   }
 }
 
-#about {
-  background: #333;
+#svgbottom {
+  height: 50px;
+  width: 100%;
+  background: none;
+  fill: $primary-overlay;
+  z-index: 1;
+}
+
+#svgbottom2 {
+  height: 50px;
+  width: 100%;
+  background: none;
+  fill: $secondary;
+  z-index: 1;
+}
+
+#about,
+#skills {
+  background: #fff;
+
+  hr {
+    border: 1px solid #ff6b45;
+    border-radius: 50px;
+  }
+
+  .skill-set {
+    position: relative;
+
+    margin: 2em 0 2em 0;
+
+    .skill-icon {
+      font-size: 7rem;
+      color: rgba(0, 0, 0, 0.1);
+      z-index: -1;
+      display: flex;
+      justify-content: start;
+    }
+
+    .skill-text {
+      position: absolute;
+      top: -1.5em;
+
+      h3 {
+        font-weight: 6 0;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
 
 #projects {
-  background: $primary;
+  background: $secondary;
+
+  .btn-secondary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+
+  .card {
+    border: 2px solid #333;
+  }
 }
 
 #main-footer {

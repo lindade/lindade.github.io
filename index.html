@@ -9,17 +9,18 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/png">
   <title>Lindas Portfolio</title>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav">
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top py-4">
+  <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top py-2">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="img/ld-logo.png" width="50" height="50" alt="Linda Debray Logo">
-        <h4 class="d-inline align-middle">Linda Debray</h4>
+        <img src="img/ld-logo.png" width="30" height="30" alt="Linda Debray Logo">
+        <p class="d-inline align-middle">Linda Debray</p>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -58,16 +59,17 @@
             <h2 class="mb-3 resp-mt">
               Linda Debray
             </h2>
-            <h1 class="display-5 mb-4">UX-Researcher, Front-End Developer</h1><!-- and Creative Technologist-->
+            <h1 class="display-4 mb-4">UX-Researcher, Front-End Developer and Creative Technologist</h1>
           </div>
-          <div class="col-lg-6 d-flex justify-content-center mt-5">
-            <img src="img/ld-logo.png" width="75%" alt="Linda Debray Logo" class="img-fluid d-none d-lg-block">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="img/ld-logo.png" width="60%" height="60%" alt="Linda Debray Logo"
+              class="img-fluid d-none d-lg-block my-5">
           </div>
         </div>
-        <div class="row">
+        <div class="row d-md-none ">
           <div class="col d-flex justify-content-center">
             <div class="arrow-icon">
-              <i class="far fa-arrow-alt-circle-down"></i>
+              <i class="fas fa-chevron-down"></i>
             </div>
           </div>
         </div>
@@ -76,17 +78,28 @@
   </section>
 
   <!-- ABOUT SECTION-->
-  <section id="about" class="py-5 text-center text-white">
+  <section id="about" class="text-center">
+    <svg id="svgbottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 102"
+      preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z"></path>
+    </svg>
     <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row py-5">
+        <div class="col-md-6 offset-md-3">
           <h2 class="mb-3">About</h2>
-          <p class="lead">My focus lies in web front-end development. In previous projects I worked on concepts and
-            implementation
-            for mobile applications and web sites. Additionally I'm very curious about AR and VR technologies.
-            I love to work in multinational surroundings. Therefore I've gained a great international background by
-            attending universities, taking international internships and working in 3 different countries around the
-            world (Spain, South Korea and Germany).</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="lead">My focus lies in web front-end development. In previous projects I worked on concepts and
+              implementation for mobile applications and websites. Additionally I am curious about AR and VR
+              technologies.
+              I love to work in multinational surroundings. Therefore I've gained a great international background by
+              attending universities (South Korea, Germany), taking international internships (Spain) and working
+              (Spain, Germany) in
+              different countries around the
+              world.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -107,15 +120,23 @@
                 <p class="card-text">Tractical is a multipage website for an imaginary technical product company build
                   with HTML5, CSS3 (SASS) and JavaScript. The website is completely responsive, based on Bootstrap 4.
                   The photo gallery is implemented with the Ekko-lightbox JavaScript plugin for Bootstrap.</p>
-                <a class="btn btn-success btn-block" href="#">Read More</a>
+                <div class="">
+                  <a class="btn btn-secondary btn-lg" target="_blank"
+                    href="https://lindade.github.io/tractical/">Demo</a>
+                  <a class="btn btn-outline-dark btn-lg" target="_blank"
+                    href="https://github.com/lindade/tractical">Code</a>
+                </div>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-bottom" src="img/wireframes.jpg" alt="">
+              <img class="card-img-top" src="img/wireframes.jpg" alt="">
               <div class="card-body">
                 <h4 class="card-title">UX and User Reasearch</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
-                <a class="btn btn-success btn-block" href="#">Read More</a>
+                <div class="">
+                  <a class="btn btn-secondary btn-lg" href="#">Demo</a>
+                  <a class="btn btn-outline-dark btn-lg" href="#">Code</a>
+                </div>
               </div>
             </div>
           </div>
@@ -132,15 +153,15 @@
                 <p class="card-text">Tractical is a multipage website for an imaginary technical product company build
                   with HTML5, CSS3 (SASS) and JavaScript. The website is completely responsive, based on Bootstrap 4.
                   The photo gallery is implemented with the Ekko-lightbox JavaScript plugin for Bootstrap.</p>
-                <a class="btn btn-success btn-block" href="#">Read More</a>
+                <a class="btn btn-secondary btn-lg" href="#">Read More</a>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-bottom" src="https://unsplash.it/1200/768.jpg?image=26" alt="">
+              <img class="card-img-top" src="https://unsplash.it/1200/768.jpg?image=26" alt="">
               <div class="card-body">
-                <h4 class="card-title">UX and User Reasearch</h4>
+                <h4 class="card-title justify-content-center">UX and User Reasearch</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
-                <a class="btn btn-success btn-block" href="#">Read More</a>
+                <a class="btn btn-secondary btn-lg" href="#">Read More</a>
               </div>
             </div>
           </div>
@@ -150,17 +171,67 @@
   </section>
 
   <!-- SKILLS SECTION-->
-  <section id="skills" class="py-5 text-center">
-    <div class="container">
+  <section id="skills" class="text-center">
+    <svg id="svgbottom2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 102"
+      preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z"></path>
+    </svg>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2 class="mb-3">Skills</h2>
+          <hr>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
-          <h2 class="mb-3">Skills</h2>
-          <p class="lead">My focus lies in web front-end development. In previous projects I worked on concepts and
-            implementation
-            for mobile applications and web sites. Additionally I'm very curious about AR and VR technologies.
-            I love to work in multinational surroundings. Therefore I've gained a great international background by
-            attending universities, taking international internships and working in 3 different countries around the
-            world (Spain, South Korea and Germany).</p>
+          <p class="lead">
+            I am quick at learning and applying new information. Below are the three main areas I see my
+            strenght lie in, as well as software skills. For full reference please refer to my Linkedin.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="skill-set">
+            <div class="skill-icon">
+              <i class="fas fa-user-secret"></i>
+            </div>
+            <div class="skill-text text-right">
+              <h3>User Research</h3>
+              <p>
+                My active listening skills coincident with my good sense to observe peoples actions which gives me
+                important insights by performing user reasearch.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-set">
+            <div class="skill-icon">
+              <i class="fas fa-handshake"></i><!-- handshake eye shoe-prints -->
+            </div>
+            <div class="skill-text text-right">
+              <h3>Empathy</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-set">
+            <div class="skill-icon">
+              <i class="fas fa-journal-whills"></i> <!-- journal-whills, jedi, jedi-order, galactic-senate-->
+            </div>
+            <div class="skill-text text-right">
+              <h3>Curious</h3>
+              <p>
+                I am interested to try and work with new and interactive technologies. I enjoy
+                to experiment, understand and explore new solutions and come up with new concepts.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -171,7 +242,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p>Copyright &copy; <span id="year"></span> Linda Debray</p>
+          <p class="lead ">Copyright &copy; <span id="year"></span> Linda Debray</p>
         </div>
       </div>
     </div>
