@@ -64,22 +64,47 @@ body {
       }
     }
   }
+
+  @media(min-width: 768px) {
+    min-height: 500px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media(min-width: 992px) {
+
+    // add a margin top to bigger screens
+    .resp-mt {
+      margin-top: 6rem;
+    }
+  }
+
 }
 
-#svgbottom {
+.svg {
   height: 50px;
   width: 100%;
   background: none;
+  z-index: 1;
+}
+
+#home-bottom-svg {
   fill: $primary-overlay;
-  z-index: 1;
 }
 
-#svgbottom2 {
-  height: 50px;
-  width: 100%;
-  background: none;
+#project-bottom-svg,
+#up-curved-svg {
   fill: $secondary;
-  z-index: 1;
+}
+
+#wavy-svg {
+  fill: #333;
 }
 
 #about,
@@ -87,8 +112,45 @@ body {
   background: #fff;
 
   hr {
-    border: 1px solid #ff6b45;
+    border: 1px solid $secondary;
     border-radius: 50px;
+  }
+
+}
+
+#projects {
+  background: $secondary;
+
+  .btn-secondary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+
+  .card {
+    border: 2px solid #333;
+  }
+}
+
+#skills {
+
+  a:link,
+  a:visited {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: $secondary;
   }
 
   .skill-set {
@@ -116,52 +178,26 @@ body {
       }
     }
   }
-}
 
-#projects {
-  background: $secondary;
+  .skill-software {
+    font-size: 4rem;
+    color: $primary-overlay;
+  }
 
-  .btn-secondary {
-    background-color: $primary;
-    border-color: $primary;
-
-    &:hover {
-      background-color: $primary-hover;
-      border-color: $primary-hover;
+  @media(min-width: 768px) {
+    .resp-mb {
+      margin-bottom: 4rem;
     }
   }
 
-  .card {
-    border: 2px solid #333;
+  @media(min-width: 992px) {
+    .resp-mb {
+      margin-bottom: 0rem;
+    }
   }
 }
 
 #main-footer {
-  background: $primary-overlay;
+  background: #333;
+  box-shadow: 2px -2px 5px $primary;
 }
-
-@media(min-width: 768px) {
-  #home {
-    min-height: 500px;
-
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-  }
-}
-
-@media(min-width: 992px) {
-  #home {
-
-    // add a margin top to bigger screens
-    .resp-mt {
-      margin-top: 6rem;
-    }
-  }
-}
-
-@media(min-width: 1200px) {}
