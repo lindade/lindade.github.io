@@ -11,15 +11,15 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/png">
+  <link rel="icon" href="img/favicon2.png" sizes="16x16 32x32" type="image/png">
   <title>Lindas Portfolio</title>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav">
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top py-2">
+  <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top py-1">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="img/ld-logo.png" width="30" height="30" alt="Linda Debray Logo">
+        <img src="img/ld-logo1.png" width="30" height="30" alt="Linda Debray Logo">
         <p class="d-inline align-middle">Linda Debray</p>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -34,13 +34,13 @@
             <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
             <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
             <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -48,39 +48,40 @@
   </nav>
 
   <!-- HOME SECTION -->
-  <section id="home" class="py-5">
+  <header id="home-section" class="py-5">
     <div class="primary-overlay text-white">
       <div class="container">
         <div class="row">
           <div class="col-xs d-flex justify-content-center mt-5 mb-3">
-            <img src="img/ld-logo.png" width="25%" alt="Linda Debray Logo" class="img-fluid d-lg-none">
+            <img src="img/ld-logo1.png" width="25%" alt="Linda Debray Logo" class="img-fluid d-lg-none">
           </div>
           <div class="col-lg-6 text-center">
             <h2 class="mb-3 resp-mt">
               Linda Debray
             </h2>
-            <h1 class="display-4 mb-4">UX- and Product Conceptist, Front-End Developer and Creative Technologist</h1>
+            <h1 class="display-4 mb-4">UX-Designer, Product Conceptist and Front-End Developer</h1>
           </div>
           <div class="col-lg-6 d-flex justify-content-center">
-            <img src="img/ld-logo.png" width="60%" height="60%" alt="Linda Debray Logo"
+            <img src="img/ld-logo1.png" width="60%" height="60%" alt="Linda Debray Logo"
               class="img-fluid d-none d-lg-block my-5">
           </div>
         </div>
-        <div class="row d-md-none ">
-          <div class="col d-flex justify-content-center">
-            <div class="arrow-icon">
-              <i class="fas fa-chevron-down"></i>
-            </div>
+      </div>
+      <div class="row d-md-none">
+        <div class="col d-flex justify-content-center">
+          <div class="arrow-icon">
+            <i class="fas fa-chevron-down"></i>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    </div>
+  </header>
 
-  <!-- ABOUT SECTION-->
+  <!-- ABOUT SECTION -->
   <section id="about" class="text-center">
     <div class="container">
-      <div class="row py-5">
+      <div class="row pt-5">
         <div class="col-md-6 offset-md-3">
           <h2 class="mb-3">About</h2>
           <hr>
@@ -97,6 +98,31 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="contact-icon">
+            <a href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"
+              target="_blank">
+              <i class="fab fa-codepen"></i>
+            </a>
+            <a href="https://github.com/lindade/" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lindadebray/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/viva_la_vida_linda/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <svg id="up-curved-svg" class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
       preserveAspectRatio="none">
       <path d="M0,100.136c0,0,26.409-65.139,44.957-67.888C63.506,29.498,100,100.136,100,100.136"></path>
@@ -109,68 +135,131 @@
       <div class="row">
         <div class="col">
           <h2 class="text-white">Projects</h2>
-          <!-- CARD WITH IMAGE -->
-          <div class="card-deck mt-5">
-            <div class="card">
-              <img class="card-img-top" src="img/tracticle.png" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Tracticle Web</h4>
-                <p class="card-text">Tractical is a multipage website for an imaginary technical product company build
-                  with HTML5, CSS3 (SASS) and JavaScript. The website is completely responsive, based on Bootstrap 4.
-                  The photo gallery is implemented with the Ekko-lightbox JavaScript plugin for Bootstrap.</p>
-                <div class="">
-                  <a class="btn btn-secondary btn-lg" target="_blank"
-                    href="https://lindade.github.io/tractical/">Demo</a>
-                  <a class="btn btn-outline-dark btn-lg" target="_blank"
-                    href="https://github.com/lindade/tractical">Code</a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="img/wireframes.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">UX and User Reasearch</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
-                <div class="">
-                  <a class="btn btn-secondary btn-lg" href="#">Demo</a>
-                  <a class="btn btn-outline-dark btn-lg" href="#">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <!-- CARD WITH IMAGE -->
-          <div class="card-deck mt-5">
-            <div class="card">
-              <img class="card-img-top" src="https://unsplash.it/1200/768.jpg?image=252" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Tracticle Web</h4>
-                <p class="card-text">Tractical is a multipage website for an imaginary technical product company build
-                  with HTML5, CSS3 (SASS) and JavaScript. The website is completely responsive, based on Bootstrap 4.
-                  The photo gallery is implemented with the Ekko-lightbox JavaScript plugin for Bootstrap.</p>
-                <a class="btn btn-secondary btn-lg" href="#">Read More</a>
-              </div>
+      <div class="row mt-4">
+        <!-- Project 1 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="img/tracticle-mac.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Tracticle Web</h4>
+              <p class="card-text">Tractical is a multipage website for an imaginary technical product company build
+                with HTML5, CSS3 (SASS) and JavaScript. The website is completely responsive, based on Bootstrap 4.
+                The photo gallery is implemented with the Ekko-lightbox JavaScript plugin for Bootstrap.</p>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://unsplash.it/1200/768.jpg?image=26" alt="">
-              <div class="card-body">
-                <h4 class="card-title justify-content-center">UX and User Reasearch</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
-                <a class="btn btn-secondary btn-lg" href="#">Read More</a>
-              </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg" target="_blank" href="https://lindade.github.io/tractical/">Demo</a>
+              <a class="btn btn-outline-dark btn-lg" target="_blank"
+                href="https://github.com/lindade/tractical">Code</a>
             </div>
           </div>
         </div>
+        <!-- Project 2 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="img/mindTime/mindtime-mac.PNG" alt="">
+            <div class="card-body">
+              <h4 class="card-title">MindTime Web</h4>
+              <p class="card-text">Onepage website to present a fictitious product. Written in HTML and CSS (SASS).
+                This projects includes Bootstrap 4. The library was customized to adjust Bootstrap to the design of
+                the webpage. Another addition is the ScrollSpy Javascript plugin to highlight the current active
+                session in the menu. The icons were included with the open fontawesome library.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg" href="https://lindade.github.io/mindtime/" target="_blank">Demo</a>
+              <a class="btn btn-outline-dark btn-lg" href="https://github.com/lindade/mindtime" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img img-fluid mb-3" src="img/blogmanager/Blogmanager.PNG" alt="">
+              <h4 class="card-title justify-content-center">Blog Manager Web-Application</h4>
+              <p class="card-text">Web application blog admin UI. HTML, Bootstrap 4, CKeditor Javascript plugin to
+                display a WYSIWYG-editor (what you see is what you get-editor).</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg" href="https://lindade.github.io/blogmanager/" target="_blank">Demo</a>
+              <a class="btn btn-outline-dark btn-lg" href="https://github.com/lindade/blogmanager"
+                target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="img/netshare/netshare-mac.PNG" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Netshare Web</h4>
+              <p class="card-text">Netshare is a one page website implemented with HTML and CSS. To achieve the
+                responsiveness Bootstrap 4 is used. The current active section gets highlighted in the menu with the
+                ScrollSpy Javascript plugin.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg" href="https://lindade.github.io/netshare/" target="_blank">Demo</a>
+              <a class="btn btn-outline-dark btn-lg" href="https://github.com/lindade/netshare" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top img-fluid mb-3" src="img/dbn/Android search_nexus5.png" alt="">
+              <h4 class="card-title">Die Besten Nachbarn</h4>
+              <p class="card-text">UX and User Reasearch based concept to help neigborhoods to improve living
+                together
+                in their area. The concept helps finding small stores which dont have any internet representation of
+                their own.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg" href="http://www.die-besten-nachbarn.de/" target="_blank">Demo</a>
+              <a class="btn btn-outline-dark btn-lg" href="#" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top img-fluid w-80 mb-3" src="img/badeseen/icon_nexus5x.png" alt="">
+              <h4 class="card-title justify-content-center">Berlin Bathing Lakes</h4>
+              <p class="card-text">A mobile appliation for Android phones. Native Java implementation to find
+                bathing
+                lakes in Berlin offering a detailed view about water qualitity and futher data read
+                via XML from the official Website of Berlin bathing lakes.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark btn-lg" href="https://github.com/lindade/blogmanager"
+                target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 7 -->
+        <div class="col-xl-4 col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img img-fluid mb-3" src="img/wireframes.jpg" alt="">
+              <h4 class="card-title">UX and User Reasearch</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg" href="#" target="_blank">Demo</a>
+              <a class="btn btn-outline-dark btn-lg" href="#" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- SKILLS SECTION-->
   <section id="skills" class="text-center">
-    <svg id="project-bottom-svg" class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+    <svg id="down-curved-svg" class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
       preserveAspectRatio="none">
       <path d="M0,0c0,0,48.389,67.148,66.938,64.398C85.486,61.648,100,0,100,0"></path>
     </svg>
@@ -181,35 +270,35 @@
           <hr>
         </div>
       </div>
-
       <div class="row">
         <div class="col mt-3">
           <div class="skill-software">
-            <i class="far fa-edit mx-5"></i>
-            <i class="fab fa-figma mx-5"></i>
-            <i class="fab fa-adobe mx-5"></i>
-            <i class="fab fa-css3 mx-5"></i>
-            <i class="fab fa-sass mx-5"></i>
-            <i class="fab fa-less mx-5"></i>
-            <i class="fab fa-bootstrap mx-5"></i>
-            <i class="fab fa-html5 mx-5"></i>
-            <i class="fab fa-js-square mx-5"></i>
-            <i class="fab fa-git-square mx-5"></i>
-            <i class="fab fa-php mx-5"></i>
-            <i class="fab fa-android mx-5"></i>
+            <i class="far fa-edit mx-5" data-toggle="tooltip" title="Pen and Paper"></i>
+            <i class="fab fa-figma mx-5" data-toggle="tooltip" data-placement="top" title="Figma"></i>
+            <i class="fab fa-adobe mx-5" data-toggle="tooltip" data-placement="left"
+              title="Photoshop and Illustrator"></i>
+            <i class="fab fa-css3 mx-5" data-toggle="tooltip" data-placement="right" title="CSS3"></i>
+            <i class="fab fa-sass mx-5" data-toggle="tooltip" data-placement="top" title="Sass"></i>
+            <i class="fab fa-less mx-5" data-toggle="tooltip" data-placement="top" title="Less"></i>
+            <i class="fab fa-bootstrap mx-5" data-toggle="tooltip" data-placement="bottom" title="Bootstrap 4"></i>
+            <i class="fab fa-html5 mx-5" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
+            <i class="fab fa-js-square mx-5" data-toggle="tooltip" data-placement="botto" title="JavaScript"></i>
+            <i class="fab fa-git-square mx-5" data-toggle="tooltip" data-placement="top" title="Git"></i>
+            <i class="fab fa-php mx-5" data-toggle="tooltip" data-placement="top" title="PHP"></i>
+            <i class="fab fa-android mx-5" data-toggle="tooltip" data-placement="top" title="Android"></i>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <svg version="1.1" id="wavy-svg" class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
-    preserveAspectRatio="none">
-    <path
-      d="M-1,59.758c0,0,4.532-8.902,7.569-6.923s4.606,5.548,12.131,8.254s15.834-1.683,16.692-4.784
+    <svg version="1.1" id="wavy-svg" class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+      preserveAspectRatio="none">
+      <path
+        d="M-1,59.758c0,0,4.532-8.902,7.569-6.923s4.606,5.548,12.131,8.254s15.834-1.683,16.692-4.784
   	s7.852-18.306,11.482-6.289s4.388,16.826,7.424,10.952s1.468-15.383,10.114-7.792s7.599,11.482,11.163,8.645s5.811-7.073,6.67-7.37
   	s4.624-1.222,7.264,3.794c2.64,5.018,6.998,5.809,9.109,5.677c2.113-0.132,1.651,9.015,1.651,9.015L100,101H-1V59.758z" />
-  </svg>
+    </svg>
+  </section>
+
   <!-- FOOTER -->
   <footer id="main-footer" class="text-center text-white p-4">
     <div class="container">
@@ -233,6 +322,34 @@
   <script>
     //Get the current year for the copyright with: <span id="year"></span>
     $('#year').text(new Date().getFullYear());
+
+    // default bootstrap scrollspy
+    $('body').scrollspy({
+      target: '#main-nav'
+    });
+
+    // Add smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+      // Check for a hash value: #home, #about, ...
+      // if the link that is clicked is not equeal to an empty string
+      if (this.hash !== '') {
+        // Prevent default behavior of the a tag
+        e.preventDefault();
+
+        // Store hash value in a variable
+        const hash = this.hash;
+        // Get fixed header height, + 10 px to move 10px more down
+        var menuHeight = $('#main-nav').height() + 10;
+
+        // Animate smooth scroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - menuHeight
+        }, 900, function () {
+          // Add hash to the url after the scroll
+          window.location.hash = hash - menuHeight;
+        });
+      }
+    });
   </script>
 </body>
 

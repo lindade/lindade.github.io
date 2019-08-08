@@ -5,8 +5,8 @@ $secondary: #ff6b45;
 $secondary-overlay: rgba(255, 107, 69, 0.8);
 
 body {
-  margin-top: 60px;
-  background: #333;
+  margin-top: 52px;
+  background: #fff;
   font-family: 'Nunito', 'Verdana', sans-serif;
 }
 
@@ -18,12 +18,13 @@ body {
   .nav-item {
     font-size: 1.2rem;
     padding-right: 1.2rem;
+    text-align: center;
   }
 }
 
-#home {
+#home-section {
   position: relative;
-  background: url('../img/texture1.png');
+  background: url('../img/wireframes.jpg');
   background-repeat: no-repeat;
   min-height: 100vh;
 
@@ -87,28 +88,9 @@ body {
 
 }
 
-.svg {
-  height: 50px;
-  width: 100%;
-  background: none;
-  z-index: 1;
-}
-
-#home-bottom-svg {
-  fill: $primary-overlay;
-}
-
-#project-bottom-svg,
-#up-curved-svg {
-  fill: $secondary;
-}
-
-#wavy-svg {
-  fill: #333;
-}
-
 #about,
-#skills {
+#skills,
+#contact {
   background: #fff;
 
   hr {
@@ -116,6 +98,30 @@ body {
     border-radius: 50px;
   }
 
+}
+
+#contact {
+
+  .contact-icon {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  a:link,
+  a:visited {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $primary-hover;
+  }
+
+  a:active {
+    color: $secondary;
+  }
 }
 
 #projects {
@@ -133,51 +139,34 @@ body {
 
   .card {
     border: 2px solid #333;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    @media(min-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  .card-text {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-footer {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 #skills {
-
-  a:link,
-  a:visited {
-    color: $primary;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: $primary;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: $secondary;
-  }
-
-  .skill-set {
-    position: relative;
-    margin: 2em 0 2em 0;
-
-    .skill-icon {
-      font-size: 7rem;
-      color: rgba(0, 0, 0, 0.1);
-      z-index: -1;
-      display: flex;
-      justify-content: start;
-    }
-
-    .skill-text {
-      position: absolute;
-      top: -1.5em;
-
-      h4 {
-        text-transform: uppercase;
-      }
-
-      p {
-        font-size: 1.1rem;
-      }
-    }
-  }
 
   .skill-software {
     font-size: 4rem;
@@ -199,5 +188,20 @@ body {
 
 #main-footer {
   background: #333;
-  box-shadow: 2px -2px 5px $primary;
+}
+
+.svg {
+  height: 50px;
+  width: 100%;
+  background: none;
+  z-index: 1;
+}
+
+#down-curved-svg,
+#up-curved-svg {
+  fill: $secondary;
+}
+
+#wavy-svg {
+  fill: #333;
 }
