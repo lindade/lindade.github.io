@@ -6,7 +6,6 @@ $secondary: #ff6b45;
 $secondary-overlay: rgba(255, 107, 69, 0.8);
 
 body {
-  margin-top: 52px;
   background: #fff;
   font-family: 'Nunito', 'Verdana', sans-serif;
 }
@@ -30,6 +29,15 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -41,13 +49,16 @@ body {
   .primary-overlay {
     background: $primary-overlay;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
 
   .arrow-icon {
+    position: absolute;
+    bottom: 0;
+    left: 46vw;
     font-size: 2.5rem;
     animation: pulse 3s ease-in-out;
     animation-iteration-count: infinite;
@@ -66,10 +77,15 @@ body {
         opacity: 0.5;
       }
     }
+
   }
 
   @media(min-width: 768px) {
     min-height: 500px;
+
+    .center {
+      min-height: 500px;
+    }
 
     h1 {
       font-size: 2.5rem;
@@ -77,14 +93,6 @@ body {
 
     h2 {
       font-size: 2rem;
-    }
-  }
-
-  @media(min-width: 992px) {
-
-    // add a margin top to bigger screens
-    .resp-mt {
-      margin-top: 6rem;
     }
   }
 
@@ -103,7 +111,6 @@ body {
 }
 
 #contact {
-
   .contact-icon {
     display: flex;
     justify-content: space-around;
@@ -151,12 +158,13 @@ body {
 
       a:link,
       a:visited {
-        color: #fff;
+        color: $primary;
         text-decoration-line: underline;
       }
 
       a:hover {
         color: $primary-hover;
+        cursor: pointer;
       }
 
       a:active {
@@ -164,7 +172,42 @@ body {
       }
     }
 
+    .card-footer {
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
     @media(min-width: 992px) {
+
+      .card-overlay {
+        opacity: 0;
+        transition: .2s ease;
+        background: linear-gradient(to bottom, $blue, $secondary-overlay);
+        border-radius: 2px;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .card-title-overlay {
+        padding-top: 1.25rem;
+        margin-bottom: 0;
+      }
+
+      p {
+
+        a:link,
+        a:visited {
+          color: #fff;
+        }
+      }
 
       &:hover .card-img {
         opacity: 0.3;
@@ -173,59 +216,14 @@ body {
       &:hover .card-overlay {
         opacity: 1;
       }
-
     }
   }
-
-  @media(min-width: 992px) {
-
-    .card-overlay {
-      opacity: 0;
-      transition: .3s ease;
-      background: linear-gradient(to right bottom, $blue, $secondary-overlay);
-      border-radius: 2px;
-      color: #fff;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-    }
-
-    .card-title-overlay {
-      padding-top: 1.25rem;
-      margin-bottom: 0;
-    }
-  }
-
-  .card-footer {
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: space-around;
-  }
-
 }
 
 #skills {
-
   .skill-software {
     font-size: 4rem;
     color: $primary-overlay;
-  }
-
-  @media(min-width: 768px) {
-    .resp-mb {
-      margin-bottom: 4rem;
-    }
-  }
-
-  @media(min-width: 992px) {
-    .resp-mb {
-      margin-bottom: 0rem;
-    }
   }
 }
 
