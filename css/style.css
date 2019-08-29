@@ -141,6 +141,14 @@ body {
 
 #main-footer {
   background: #333; }
+  #main-footer p a:link,
+  #main-footer p a:visited {
+    color: #fff; }
+  #main-footer p a:hover {
+    color: #ccc;
+    cursor: pointer; }
+  #main-footer p a:active {
+    color: #bbb; }
 
 .svg {
   height: 50px;
