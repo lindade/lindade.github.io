@@ -229,6 +229,23 @@ body {
 
 #main-footer {
   background: #333;
+
+  p {
+
+    a:link,
+    a:visited {
+      color: #fff;
+    }
+
+    a:hover {
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    a:active {
+      color: #bbb;
+    }
+  }
 }
 
 .svg {
