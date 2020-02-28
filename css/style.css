@@ -59,11 +59,6 @@ body {
   height: 100%;
 }
 
-#home-section img {
-  width: 60%;
-  height: 60%;
-}
-
 #home-section .arrow-icon {
   position: absolute;
   bottom: 0;
