@@ -6,6 +6,9 @@ $('body').scrollspy({
   target: '#main-nav'
 });
 
+// Init tooltips
+$('[data-toggle="tooltip"]').tooltip();
+
 // Add smooth scrolling
 $('#main-nav a').on('click', function (e) {
   // Check for a hash value: #home, #about, ...
